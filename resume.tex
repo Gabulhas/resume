@@ -1,0 +1,82 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+\usepackage{tabularx}
+\usepackage{array}
+
+%====================
+% File:         resume.tex
+% Modifying author2:       https://github.com/mengisok 
+% Last Updated: Oct 29, 2022
+% Notes:        I edited again on the version of @gobborg      
+%====================
+
+%====================
+% File:         resume.tex
+% Modifying author1:       https://github.com/gobborg 
+% Last Updated: Dec 26, 2021
+% Notes:        I just made it prettier and better suited to
+%               my needs.
+%====================
+
+%====================
+% File:         resume.tex
+% Original author:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+% Last Updated: Nov 19, 2021
+% Notes:        All formatting is done in TLCresume.sty
+%               No need to touch that file. 
+%               All actual content is in the sections/ folder.
+%====================
+
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\author{Guilherme Lopes} 
+\def\phone{+351963750313}
+\def\address{Guarda, Portugal}
+\def\email{guilhermebidarra@gmail.com}
+% blog edited in _header.tex
+\def\github{Gabulhas} % github username
+\def\LinkedIn{guilherme-lopes-670753218} % linkedin.com/in/______
+
+\begin{document}
+\import{sections/}{_header}
+\vspace*{10pt}
+\hrule
+
+
+\section{\textbf{Work Experience}}
+\import{sections/}{experience}
+\vspace*{6pt}
+\hrule
+\section{\textbf{Education}}
+\import{sections/}{education}
+\vspace*{6pt}
+\hrule
+
+\section{\textbf{Relevant Projects}}
+\vspace*{3pt}
+\import{sections/}{project}
+\vspace*{6pt}
+
+\section{\textbf{Skills}}
+\vspace*{3pt}
+\import{sections/}{skills}
+\vspace*{6pt}
+\hrule
+
+\section{\textbf{Interests}}
+\vspace*{3pt}
+\import{sections/}{interests}
+\vspace*{12pt}
+\hrule
+
+\section{\textbf{Extras}}
+\vspace*{3pt}
+\import{sections/}{extras}
+\vspace*{6pt}
+
+\end{document}
